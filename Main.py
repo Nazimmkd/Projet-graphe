@@ -348,8 +348,7 @@ class FloydWarshallApp:
                     loop_r = 25
                     lx = x1 + loop_r * 2.5 * math.cos(angle)
                     ly = y1 + loop_r * 2.5 * math.sin(angle)
-                    self.canvas.create_line(x1, y1, lx, ly, x1, y1, smooth=True, arrow=tk.LAST, fill=color, width=width,
-                                            arrowshape=(10, 12, 5))
+                    self.canvas.create_line(x1, y1, lx, ly, x1, y1, smooth=True, arrow=tk.LAST, fill=color, width=width, arrowshape=(10, 12, 5))
                     tx, ty = x1 + loop_r * 2.8 * math.cos(angle), y1 + loop_r * 2.8 * math.sin(angle)
                     self.create_text_bg(tx, ty, poids, color)
                     continue
@@ -362,8 +361,7 @@ class FloydWarshallApp:
                     offset = 40
                     nx, ny = -dy / dist, dx / dist
                     cx_pt, cy_pt = mid_x + offset * nx, mid_y + offset * ny
-                    self.canvas.create_line(x1, y1, cx_pt, cy_pt, x2, y2, smooth=True, arrow=tk.LAST, fill=color,
-                                            width=width, arrowshape=(10, 12, 5))
+                    self.canvas.create_line(x1, y1, cx_pt, cy_pt, x2, y2, smooth=True, arrow=tk.LAST, fill=color, width=width, arrowshape=(10, 12, 5))
                     self.create_text_bg(cx_pt, cy_pt, poids, color)
                 else:
                     dx, dy = x2 - x1, y2 - y1
