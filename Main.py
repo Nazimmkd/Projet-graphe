@@ -1,4 +1,5 @@
 import tkinter as tk
+
 # Importation de la classe principale de l'interface depuis interface.py
 from interface import FloydWarshallApp
 
